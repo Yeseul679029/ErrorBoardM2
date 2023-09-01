@@ -50,7 +50,7 @@ public class WriteController extends HttpServlet {
         // 첨부파일 이외의 폼값을 DTO에 저장
         MVCBoardDTO dto = new MVCBoardDTO(); 
         dto.setName(req.getParameter("name"));
-        dto.setTitle(req.getParameter("titleX"));
+        dto.setTitle(req.getParameter("title"));
         dto.setContent(req.getParameter("content"));
         dto.setPass(req.getParameter("pass"));
 

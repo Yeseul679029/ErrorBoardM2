@@ -101,7 +101,7 @@ public class MVCBoardDAO extends DBConnPool {
         	/* 쿼리문의 일련번호는 모델1 게시판에서 생성한 시퀀스를 그대로
         	사용한다. 나머지 값들은 컨트롤러(서블릿)에서 받은 후 모델(DAO)로
         	전달한다. */
-            String query = "INSERT INTO mvcboardX ( "
+            String query = "INSERT INTO mvcboard ( "
                          + " idx, name, title, content, ofile, sfile, pass) "
                          + " VALUES ( "
                          + " seq_board_num.NEXTVAL,?,?,?,?,?,?)";
@@ -139,7 +139,7 @@ public class MVCBoardDAO extends DBConnPool {
             if (rs.next()) {  
                 dto.setIdx(rs.getString(1));
                 dto.setName(rs.getString(2));
-                dto.setTitle(rs.getString("X"));
+                dto.setTitle(rs.getString("title"));
                 dto.setContent(rs.getString(4));
                 dto.setPostdate(rs.getDate(5));
                 dto.setOfile(rs.getString(6));

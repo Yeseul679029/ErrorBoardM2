@@ -48,7 +48,7 @@ public class ViewController extends HttpServlet {
         }
                 
         // 게시물(dto)을 request영역에 저장한 후 뷰로 포워드한다. 
-        req.setAttribute("dtoX", dto);
+        req.setAttribute("dto", dto);
         req.setAttribute("isImage", isImage);
         req.getRequestDispatcher("/14MVCBoard/View.jsp").forward(req, resp);
     }

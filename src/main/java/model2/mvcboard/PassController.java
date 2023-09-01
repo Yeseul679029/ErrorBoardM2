@@ -21,15 +21,15 @@ public class PassController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	//패스워드 검증 페이지로 진입시에는 get방식으로 처리한다. 
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-//        throws ServletException, IOException {
-//    	/* 페이지로 전달되는 파라미터가 컨트롤러에서 필요한 경우에는 request
-//    	내장객체를 통해 받아 사용한다. 
-//    	만약 JSP에서 필요하다면 EL의 내장객체 param을 이용하면 된다. */
-//        req.setAttribute("mode", req.getParameter("mode"));
-//        req.getRequestDispatcher("/14MVCBoard/Pass.jsp").forward(req, resp);
-//    }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+        throws ServletException, IOException {
+    	/* 페이지로 전달되는 파라미터가 컨트롤러에서 필요한 경우에는 request
+    	내장객체를 통해 받아 사용한다. 
+    	만약 JSP에서 필요하다면 EL의 내장객체 param을 이용하면 된다. */
+        req.setAttribute("mode", req.getParameter("mode"));
+        req.getRequestDispatcher("/14MVCBoard/Pass.jsp").forward(req, resp);
+    }
 
     //패스워드 검증 페이지에서 전송한 값을 통해 레코드 검증 
     @Override

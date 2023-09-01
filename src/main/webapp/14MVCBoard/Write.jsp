@@ -38,7 +38,7 @@ function validateForm(form) {  // 필수 항목 입력 확인
 전송할때의 경로(요청명)가 쓰기 페이지로 진입할때와 동일하지만, 컨트롤러에서는 
 get방식과 post방식에 따라 각각 처리할 수 있다. 
 -->
-<form name="writeFrm" method="post" enctype="multipart/form-dataX"
+<form name="writeFrm" method="post" enctype="multipart/form-data"
       action="../mvcboard/write.do" onsubmit="return validateForm(this);">
 <table border="1" width="90%">
     <tr>
