@@ -234,7 +234,7 @@ public class MVCBoardDAO extends DBConnPool {
             // 쿼리문 템플릿 준비
             String query = "UPDATE mvcboard"
             		+ " SET title=?, name=?, content=?, ofile=?, sfile=? "
-            		+ " XWHERE idx=? and pass=?";
+            		+ " WHERE idx=? and pass=?";
             /* 서블릿 게시판은 비회원제이므로 게시물 수정시 일련번호 뿐만
             아니라 패스워드까지 조건절로 추가한다. 따라서 패스워드가 일치하지
             않는다면 게시물은 수정되지 않는다. */

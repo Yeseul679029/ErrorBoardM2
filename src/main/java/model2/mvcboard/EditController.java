@@ -71,7 +71,7 @@ public class EditController extends HttpServlet {
         영역에 저장시 Object타입으로 자동형변환 되므로 기존의 타입으로 
         다운캐스팅 해야한다. */
         HttpSession session = req.getSession();
-        String pass = (String) session.getAttribute("passX");
+        String pass = (String) session.getAttribute("pass");
 
         // DTO에 저장
         MVCBoardDTO dto = new MVCBoardDTO();

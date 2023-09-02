@@ -16,7 +16,7 @@
     <table border="1" width="90%">
     <tr>
         <td align="center">
-            <select name="searchXField">
+            <select name="searchField">
                 <option value="title">제목</option>
                 <option value="content">내용</option>
             </select>
